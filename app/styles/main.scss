@@ -13,9 +13,9 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // endbower
 
 .browsehappy {
-    margin: 0.2em 0;
     background: $colorStoneGray;
     color: $colorBlack;
+    margin: 0.2em 0;
     padding: 0.2em 0;
 }
 
@@ -23,50 +23,123 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 /////////////////////////////////////////////////////// TAGS
 ////////////////////////////////////////////////////////////
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: url('../images/downtown_invert.png') no-repeat;
+    background: url('../images/downtown3.png') no-repeat;
     background-size: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h1 {
+    color: $colorWhite;
+    font-family: $fontIMFellDWPica;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 19px;
+}
+
+h2 {
+    color: $colorWhite;
+    font-family: $fontIMFellDWPica;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 19px;
 }
 
 h3 {
-    font-family: $fontTitillium;
+    color: $colorBlack;
+    font-family: $fontIMFellDWPica;
     font-style: normal;
     font-weight: 900;
-    margin-top: 0;
-    margin-bottom: 0;
     line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 19px;
+}
+
+h6 {
+    color: $colorBlack;
+    font-family: $fontIMFellDWPica;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 19px;
+}
+
+p {
+    color: $colorBlack;
+    font-family: $fontPodkova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
     padding-bottom: 19px;
 }
 
 ////////////////////////////////////////////////////////////
-///////////////////////////////////////////////// CONTAINERS
+///////////////////////////////////////////////////// HEADER
 ////////////////////////////////////////////////////////////
+.nav a {
+    color: $colorBlack;
+    font-family: $fontIMFellDWPica;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 19px;
+}
 
+////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////// BODY
+////////////////////////////////////////////////////////////
+.section {
+    background-image: $backgroundPaperTexture;
+    height: 300px;
+    left: 0px;
+    padding: 40px 80px;
+    right: 0px;
+    text-align: center;
+}
+
+.first-section {
+    margin-top: 250px;
+}
+
+.photo {
+    box-sizing: border-box;
+    height: 300px;
+    padding: 0px;
+    // width: auto;
+}
+
+.headline {
+    background-color: $colorDeepFogGray;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 800px;
+    min-height: 300px;
+    padding-top: 80px;
+    text-align: center;
+}
 
 ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////// FOOTER
 ////////////////////////////////////////////////////////////
-.section {
-    right: 0px;
-    left: 0px;
-    height: 300px;
-    background-color: $colorBurntOrange;
-}
-
-.first-section {
-    margin-top: 400px;
-}
-
-.headline {
-    max-width: 800px;
-    margin: 0 auto;
-    min-height: 200px;
-    background-color: $colorStoneGray;
-}
-
 .footer {
-    padding-top: 19px;
-    color: $colorWhite;
     border-top: 1px solid $colorStoneGray;
+    color: $colorWhite;
+    padding-top: 19px;
 }

@@ -1,12 +1,14 @@
 ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////// COLORS
 ////////////////////////////////////////////////////////////
-$colorMidnightGray: #444;
+$colorSteelBlue: #43697a;
 $colorBurntOrange: #FF6347;
-$colorFogGray: #EEE;
+$colorWhite: #FFF;
+$colorFogGray: rgba(240, 240, 240, 0.5);
+$colorDeepFogGray: rgba(40, 40, 40, 0.9);
 $colorLightGray: #DDD;
 $colorStoneGray: #AAA;
-$colorWhite: #FFF;
+$colorMidnightGray: #444;
 $colorBlack: #000;
 
 ////////////////////////////////////////////////////////////
@@ -14,3 +16,11 @@ $colorBlack: #000;
 ////////////////////////////////////////////////////////////
 $fontTitillium: 'Titillium Web', sans-serif;
 $fontSigmarOne: 'Sigmar One', cursive;
+$fontAstigmatic: 'Astigmatic', serif;
+$fontIMFellDWPica: 'IM Fell DW Pica', sans-serif;
+$fontPodkova: 'Podkova', sans-serif;
+
+////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// STYLING
+////////////////////////////////////////////////////////////
+$backgroundPaperTexture: url('http://api.thumbr.it/whitenoise-1000x1000.png?background=ebebebff&noise=626262&density=36&opacity=13');
