@@ -69,7 +69,7 @@ h3 {
     }
 }
 
-h6 {
+h5 {
     color: $colorBlack;
     font-family: $fontIMFellDWPica;
     font-style: normal;
@@ -230,5 +230,6 @@ p {
 .footer {
     border-top: 1px solid $colorStoneGray;
     color: $colorWhite;
+    margin-top: 40px;
     padding-top: 19px;
 }

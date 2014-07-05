@@ -10,11 +10,11 @@ $(document).on('click', '.close-button', function() {
 	$('.project-detail-backdrop').hide();
 });
 
-var aryNavLinks = ['#about-link', '#portfolio-link', '#contact-link'];
+var aryNavLinks = ['about-link', 'portfolio-link', 'contact-link'];
 
 aryNavLinks.forEach(function(link) {
-	$(link).click(function() {
-		$('html, body').animate({scrollTop: $(link + '-to').offset().top - 20}, 'slow');
+	$("." + link).click(function() {
+		$('html, body').animate({scrollTop: $("#" + link + '-to').offset().top - 20}, 'slow');
 	});
 });
 
