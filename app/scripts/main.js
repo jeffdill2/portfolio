@@ -10,7 +10,7 @@ $(document).on('click', '.close-button', function() {
 	$('.project-detail-backdrop').hide();
 });
 
-var aryNavLinks = ['about-link', 'portfolio-link', 'contact-link'];
+var aryNavLinks = ['home-link', 'about-link', 'portfolio-link', 'contact-link', 'skills-link'];
 
 aryNavLinks.forEach(function(link) {
 	$("." + link).click(function() {

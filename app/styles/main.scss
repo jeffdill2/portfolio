@@ -108,10 +108,10 @@ p {
     left: 10px;
     opacity: 0.9;
     position: fixed;
-    padding-left: 20px;
+    padding-left: 13px;
     padding-top: 2px;
     top: 0px;
-    width: 350px;
+    width: 500px;
 }
 
 .nav a {
@@ -127,6 +127,10 @@ p {
 
     &.font-white {
         color: $colorWhite;
+    }
+
+    &:hover {
+        cursor: pointer;
     }
 }
 
