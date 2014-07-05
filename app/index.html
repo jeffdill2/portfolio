@@ -22,6 +22,9 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+        <!--////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////// STATIC
+        /////////////////////////////////////////////////////////-->
         <div class="project-detail-backdrop"></div>
 
         <div class="dynamic-header">
@@ -76,7 +79,7 @@
             </p>
         </div>
 
-        <img class="photo" src="../images/reedy-river.png">
+        <img class="section-break-photo" src="../images/reedy-river.png">
 
         <div class="section">
             <a id="portfolio-link-to"></a>
@@ -116,7 +119,7 @@
             </div>
         </div>
 
-        <img class="photo" src="../images/cotton-warehouse.png">
+        <img class="section-break-photo" src="../images/cotton-warehouse.png">
 
         <div class="section">
             <a id="skills-link-to"></a>
@@ -124,7 +127,7 @@
             <h1 class="font-black">skills.</h1>
         </div>
 
-        <img class="photo" src="../images/downtown-pan.png">
+        <img class="section-break-photo" src="../images/downtown-pan.png">
 
         <div class="section">
             <a id="contact-link-to"></a>
@@ -138,9 +141,26 @@
             </div>
         </div>
 
+        <!--////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////// TEMPLATES
+        /////////////////////////////////////////////////////////-->
+        <script type="text/template" id="project-detail-template">
+            <img class="project-detail-photo-desktop" src="<%= desktopPhoto %>">
+            <img class="project-detail-photo-mobile" src="<%= mobilePhoto %>">
+
+            <div class="project-description"><%= description %></div>
+
+            <ul class="project-techs">
+                <% techs.forEach(function(tech) { %>
+                    <li><%= tech %></li>
+                <% }); %>
+            </ul>
+        </script>
+
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
