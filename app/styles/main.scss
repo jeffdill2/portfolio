@@ -23,7 +23,6 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 /////////////////////////////////////////////////////// TAGS
 ////////////////////////////////////////////////////////////
 body {
-    padding-bottom: 20px;
     padding-top: 20px;
 }
 
@@ -239,9 +238,13 @@ p {
     z-index: 1001;
 }
 
+.social-media-links {
+    margin-top: 10px;
+}
+
 .social-media-link {
     color: $colorMidnightGray;
-    padding: 20px;
+    padding: 40px;
 
     &:hover {
         -webkit-animation: float 1.5s ease-out infinite;
@@ -259,6 +262,19 @@ p {
         -ms-transform: translate(0px, 8px);
         -o-transform: translate(0px, 8px);
         transform: translate(0px, 8px);
+    }
+}
+
+.email-phone-infos {
+    padding-top: 30px;
+}
+
+.email-phone-info {
+    color: $colorBlack;
+
+    &:hover {
+        // color: $colorMidnightGray;
+        text-decoration: none;
     }
 }
 

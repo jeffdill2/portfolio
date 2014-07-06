@@ -18,8 +18,8 @@ var objProsAndConsDetails = {
 };
 
 var objChatAtchaDetails = {
-	desktopPhoto: 'test',
-	mobilePhoto: 'test',
+	desktopPhoto: '../images/chat-atcha-desktop.png',
+	mobilePhoto: '../images/mobile-placeholder.png',
 	description: 'test',
 	techs: [
 		'test1',
@@ -29,8 +29,8 @@ var objChatAtchaDetails = {
 };
 
 var objImageGalleryDetails = {
-	desktopPhoto: 'test',
-	mobilePhoto: 'test',
+	desktopPhoto: '../images/image-gallery-desktop.png',
+	mobilePhoto: '../images/mobile-placeholder.png',
 	description: 'test',
 	techs: [
 		'test1',
@@ -40,8 +40,8 @@ var objImageGalleryDetails = {
 };
 
 var objCSSAnimationsDetails = {
-	desktopPhoto: 'test',
-	mobilePhoto: 'test',
+	desktopPhoto: '../images/css-animations-desktop.png',
+	mobilePhoto: '../images/mobile-placeholder.png',
 	description: 'test',
 	techs: [
 		'test1',
