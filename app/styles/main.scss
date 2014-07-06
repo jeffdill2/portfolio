@@ -149,7 +149,7 @@ p {
     background-image: $backgroundPaperTexture;
     left: 0px;
     min-height: 200px;
-    padding: 40px 80px;
+    padding: 50px 80px 20px 80px;
     right: 0px;
     text-align: center;
 }
@@ -237,6 +237,29 @@ p {
     right: 0px;
     top: 0px;
     z-index: 1001;
+}
+
+.social-media-link {
+    color: $colorMidnightGray;
+    padding: 20px;
+
+    &:hover {
+        -webkit-animation: float 1.5s ease-out infinite;
+        -moz-animation: float 1.5s ease-out infinite;
+        -ms-animation: float 1.5s ease-out infinite;
+        -o-animation: float 1.5s ease-out infinite;
+        animation: float 1.5s ease-out infinite;
+    }
+}
+
+@-webkit-keyframes float {
+    50% {
+        -webkit-transform: translate(0px, 8px);
+        -moz-transform: translate(0px, 8px);
+        -ms-transform: translate(0px, 8px);
+        -o-transform: translate(0px, 8px);
+        transform: translate(0px, 8px);
+    }
 }
 
 ////////////////////////////////////////////////////////////

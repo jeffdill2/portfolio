@@ -92,7 +92,7 @@ $(document).on('click', '.close-button', function() {
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// NAVIGATION BARS
 ////////////////////////////////////////////////////////////
-var aryNavLinks = ['home-link', 'about-link', 'portfolio-link', 'contact-link', 'skills-link'];
+var aryNavLinks = ['home-link', 'about-link', 'portfolio-link', 'connect-link', 'skills-link'];
 
 aryNavLinks.forEach(function(link) {
 	$("." + link).click(function() {
