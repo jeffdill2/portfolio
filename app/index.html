@@ -33,7 +33,7 @@
                 <li><a class="home-link font-white">home</a></li>
                 <li><a class="about-link font-white">about</a></li>
                 <li><a class="portfolio-link font-white">portfolio</a></li>
-                <li><a class="skills-link font-white">skills</a></li>
+                <li><a class="resume-link font-white">resume</a></li>
                 <li><a class="connect-link font-white">connect</a></li>
             </ul>
         </div>
@@ -49,7 +49,7 @@
                 <ul class="nav nav-pills pull-right">
                     <li><a class="about-link" href="#">about</a></li>
                     <li><a class="portfolio-link" href="#">portfolio</a></li>
-                    <li><a class="skills-link" href="#">skills</a></li>
+                    <li><a class="resume-link" href="#">resume</a></li>
                     <li><a class="connect-link" href="#">connect</a></li>
                 </ul>
 
@@ -68,7 +68,7 @@
             <h1 class="font-black">about.</h1>
 
             <p>
-                I have 6+ years of experience developing desktop and console applications. After attending a
+                I've spent the past 6+ years developing desktop and console applications. After attending a
                 Ruby on Rails development weekend at the end of 2013, I began falling in love with web development.
                 I spent the next several months familiarizing myself with Ruby on Rails as well as taking on an
                 ASP.NET project at work with much success. At that point, I knew it was time to make a change and
@@ -125,9 +125,9 @@
         <img class="section-break-photo" src="../images/cotton-warehouse.png">
 
         <div class="section">
-            <a id="skills-link-to"></a>
+            <a id="resume-link-to"></a>
 
-            <h1 class="font-black">skills.</h1>
+            <h1 class="font-black">resume.</h1>
         </div>
 
         <img class="section-break-photo" src="../images/downtown-pan.png">
@@ -162,6 +162,16 @@
         <script type="text/template" id="project-detail-template">
             <img class="project-detail-photo-desktop" src="<%= desktopPhoto %>">
             <img class="project-detail-photo-mobile" src="<%= mobilePhoto %>">
+
+            <div>
+                <a href="<%= projectURL %>" target="#">
+                    <div class="project-detail-button">Visit Site</div>
+                </a>
+
+                <a href="<%= codeURL %>" target="#">
+                    <div class="project-detail-button">Visit GitHub</div>
+                </a>
+            </div>
 
             <div class="project-description">
                 <h2>description:</h2>

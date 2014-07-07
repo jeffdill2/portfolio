@@ -88,7 +88,6 @@ p {
     line-height: 30px;
     margin-bottom: 0;
     margin-top: 0;
-    // padding-bottom: 19px;
 
     &.font-white {
         color: $colorWhite;
@@ -116,7 +115,7 @@ ul {
     left: 10px;
     opacity: 0.9;
     position: fixed;
-    padding-left: 13px;
+    padding-left: 4px;
     padding-top: 2px;
     top: 0px;
     width: 500px;
@@ -241,11 +240,40 @@ ul {
     z-index: 1001;
 }
 
+.project-detail-button {
+    background-color: $colorStoneGray;
+    border-radius: 4px;
+    color: $colorBlack;
+    display: inline-block;
+    font-family: $fontPodkova;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+
+    &:hover {
+        background-color: $colorBlack;
+        color: $colorWhite;
+    }
+}
+
 .project-description {
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .project-tech {
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
 
     & [class*="col"] {
@@ -367,5 +395,12 @@ ul {
 
     .dynamic-header {
         display: none !important;
+    }
+
+    .footer {
+
+        & h5 {
+            font-size: 12px;
+        }
     }
 }

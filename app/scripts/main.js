@@ -1,3 +1,5 @@
+'use strict';
+
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////// TEMPLATES
 ////////////////////////////////////////////////////////////
@@ -9,26 +11,35 @@ var projectDetailTemplate = _.template($('#project-detail-template').text());
 var objProsAndConsDetails = {
 	desktopPhoto: '../images/pros-and-cons-desktop.png',
 	mobilePhoto: '../images/pros-and-cons-mobile.png',
-	description: 'Pros and Cons is badass!',
+	projectURL: 'http://jeffdill2.github.io/pros-and-cons/',
+	codeURL: 'https://github.com/jeffdill2/pros-and-cons',
+	description: 'Pros and Cons is an app I created to demonstrate moving data around between different Backbone collections. The data resides on an Express server utilizing MongoDB.',
 	techs: [
 		'Backbone',
 		'Express',
 		'Node.js',
 		'MongoDB',
 		'Underscore',
-		'Sass'
+		'HTML',
+		'CSS',
+		'Sass',
+		'Responsive Design'
 	]
 };
 
 var objChatAtchaDetails = {
 	desktopPhoto: '../images/chat-atcha-desktop.png',
 	mobilePhoto: '../images/mobile-placeholder.png',
-	description: 'test',
+	projectURL: 'http://jeffdill2.github.io/chat-app/',
+	codeURL: 'https://github.com/jeffdill2/chat-app',
+	description: 'Chat Atcha is a messaging application I built. It stores and retrieves data in real-time from an Express server utilizing MongoDB.  <i>HINT</i>: If you hover over the triangle, you can toggle Auto-Scroll on and off.',
 	techs: [
 		'Express',
 		'Node.js',
 		'MongoDB',
 		'Underscore',
+		'HTML',
+		'CSS',
 		'Sass'
 	]
 };
@@ -36,11 +47,15 @@ var objChatAtchaDetails = {
 var objImageGalleryDetails = {
 	desktopPhoto: '../images/image-gallery-desktop.png',
 	mobilePhoto: '../images/mobile-placeholder.png',
+	projectURL: 'http://jeffdill2.github.io/parse-intro/',
+	codeURL: 'https://github.com/jeffdill2/parse-intro',
 	description: 'test',
 	techs: [
 		'Parse',
 		'Fabric.js',
 		'Underscore',
+		'HTML',
+		'CSS',
 		'Sass'
 	]
 };
@@ -48,8 +63,11 @@ var objImageGalleryDetails = {
 var objCSSAnimationsDetails = {
 	desktopPhoto: '../images/css-animations-desktop.png',
 	mobilePhoto: '../images/mobile-placeholder.png',
+	projectURL: 'http://jeffdill2.github.io/iron-yard-day-four/',
+	codeURL: 'https://github.com/jeffdill2/iron-yard-day-four',
 	description: 'test',
 	techs: [
+		'HTML',
 		'CSS',
 		'Sass',
 		'Keyframes'
@@ -83,7 +101,7 @@ $('.project-preview').click(function() {
 			break;
 	}
 
-	$('.project-detail').append('<div class="close-button"></div>')
+	$('.project-detail').append('<div class="close-button"></div>');
 	$('.project-detail').append(renderedTemplate);
 	$('.project-detail-backdrop').fadeIn();
 	$('.project-detail').fadeIn();
@@ -98,7 +116,7 @@ $(document).on('click', '.close-button', function() {
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// NAVIGATION BARS
 ////////////////////////////////////////////////////////////
-var aryNavLinks = ['home-link', 'about-link', 'portfolio-link', 'connect-link', 'skills-link'];
+var aryNavLinks = ['home-link', 'about-link', 'portfolio-link', 'connect-link', 'resume-link'];
 
 aryNavLinks.forEach(function(link) {
 	$("." + link).click(function() {
@@ -112,10 +130,10 @@ $(window).scroll(function() {
     clearTimeout($.data(this, "scrollCheck"));
 
     $.data(this, "scrollCheck",
-    	setTimeout(function() {
-    		if ($(window).scrollTop() > 710) {
-    			$('.dynamic-header').fadeIn();
-    		}
-    	}, 250)
-    );
+		setTimeout(function() {
+			if ($(window).scrollTop() > 700) {
+				$('.dynamic-header').fadeIn();
+			}
+		}, 250)
+	);
 });
