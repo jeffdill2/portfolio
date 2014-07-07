@@ -11,9 +11,12 @@ var objProsAndConsDetails = {
 	mobilePhoto: '../images/pros-and-cons-mobile.png',
 	description: 'Pros and Cons is badass!',
 	techs: [
-		'test1',
-		'test2',
-		'test3'
+		'Backbone',
+		'Express',
+		'Node.js',
+		'MongoDB',
+		'Underscore',
+		'Sass'
 	]
 };
 
@@ -22,9 +25,11 @@ var objChatAtchaDetails = {
 	mobilePhoto: '../images/mobile-placeholder.png',
 	description: 'test',
 	techs: [
-		'test1',
-		'test2',
-		'test3'
+		'Express',
+		'Node.js',
+		'MongoDB',
+		'Underscore',
+		'Sass'
 	]
 };
 
@@ -33,9 +38,10 @@ var objImageGalleryDetails = {
 	mobilePhoto: '../images/mobile-placeholder.png',
 	description: 'test',
 	techs: [
-		'test1',
-		'test2',
-		'test3'
+		'Parse',
+		'Fabric.js',
+		'Underscore',
+		'Sass'
 	]
 };
 
@@ -44,9 +50,9 @@ var objCSSAnimationsDetails = {
 	mobilePhoto: '../images/mobile-placeholder.png',
 	description: 'test',
 	techs: [
-		'test1',
-		'test2',
-		'test3'
+		'CSS',
+		'Sass',
+		'Keyframes'
 	]
 };
 

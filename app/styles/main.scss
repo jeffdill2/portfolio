@@ -35,7 +35,7 @@ h1 {
     line-height: 40px;
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 
     &.font-black {
         color: $colorBlack;
@@ -47,7 +47,7 @@ h2 {
     font-family: $fontIMFellDWPica;
     font-style: normal;
     font-weight: 900;
-    line-height: 40px;
+    line-height: 30px;
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 19px;
@@ -88,7 +88,16 @@ p {
     line-height: 30px;
     margin-bottom: 0;
     margin-top: 0;
-    padding-bottom: 19px;
+    // padding-bottom: 19px;
+
+    &.font-white {
+        color: $colorWhite;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
 }
 
 ////////////////////////////////////////////////////////////
@@ -137,6 +146,7 @@ p {
 /////////////////////////////////////////////////////// BODY
 ////////////////////////////////////////////////////////////
 .home-banner {
+    height: 800px;
     left: 0;
     position: fixed;
     top: 0;
@@ -148,13 +158,13 @@ p {
     background-image: $backgroundPaperTexture;
     left: 0px;
     min-height: 200px;
-    padding: 50px 80px 20px 80px;
+    padding: 50px 80px 50px 80px;
     right: 0px;
     text-align: center;
 }
 
 .first-section {
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 .section-break-photo {
@@ -167,13 +177,18 @@ p {
     background-color: $colorDeepFogGray;
     border-radius: 8px;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 100px;
     max-width: 800px;
     min-height: 300px;
-    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
     text-align: center;
 }
 
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////// PORTFOLIO
+////////////////////////////////////////////////////////////
 .project-preview {
     background-color: $colorFogGray;
     display: inline-block;
@@ -193,8 +208,10 @@ p {
     border-radius: 6px;
     display: none;
     height: 80%;
+    left: 10%;
     margin: 0 auto;
     overflow: auto;
+    padding: 20px;
     position: fixed;
     text-align: center;
     top: 10%;
@@ -212,6 +229,34 @@ p {
     padding: 20px;
 }
 
+.project-detail-backdrop {
+    background-color: $colorWhite;
+    bottom: 0px;
+    display: none;
+    left: 0px;
+    opacity: 0.8;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 1001;
+}
+
+.project-description {
+    padding-bottom: 50px;
+}
+
+.project-tech {
+    text-align: center;
+
+    & [class*="col"] {
+        background-image: $backgroundPaperTexture;
+        border-radius: 3px;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+    }
+}
+
 .close-button {
     background: url('../images/close-button.png');
     height: 40px;
@@ -226,25 +271,17 @@ p {
     }
 }
 
-.project-detail-backdrop {
-    background-color: $colorWhite;
-    bottom: 0px;
-    display: none;
-    left: 0px;
-    opacity: 0.8;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    z-index: 1001;
-}
-
+////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// CONNECT
+////////////////////////////////////////////////////////////
 .social-media-links {
     margin-top: 10px;
 }
 
 .social-media-link {
     color: $colorMidnightGray;
-    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     &:hover {
         -webkit-animation: float 1.5s ease-out infinite;
@@ -286,4 +323,49 @@ p {
     color: $colorWhite;
     margin-top: 40px;
     padding-top: 19px;
+}
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// RESPONSIVE
+////////////////////////////////////////////////////////////
+@media screen and (max-width: 1000px) {
+    .section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-detail {
+        background-color: $colorMidnightGray;
+        border-radius: 6px;
+        display: none;
+        height: 100%;
+        left: 0px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0px;
+        position: fixed;
+        text-align: center;
+        top: 0px;
+        width: 100%;
+        z-index: 1001;
+    }
+
+    .project-detail-photo-desktop {
+        padding: 10px;
+        padding-top: 40px;
+        width: 100%;
+    }
+
+    .project-detail-photo-mobile {
+        height: 40%;
+        padding: 10px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .dynamic-header {
+        display: none !important;
+    }
 }

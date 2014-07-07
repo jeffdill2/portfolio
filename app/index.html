@@ -94,7 +94,7 @@
                     <img src="../images/greenville-vintage-1.jpg">
                 </div>
 
-                <h3 class="font-white">pros and cons</h3>
+                <h2 class="font-white">pros and cons</h2>
             </div>
 
             <div class="project-preview span3" id="project-chat-atcha">
@@ -102,7 +102,7 @@
                     <img src="../images/greenville-vintage-2.jpg">
                 </div>
 
-                <h3 class="font-white">chat atcha</h3>
+                <h2 class="font-white">chat atcha</h2>
             </div>
 
             <div class="project-preview span3" id="project-image-gallery">
@@ -110,7 +110,7 @@
                     <img src="../images/greenville-vintage-3.jpg">
                 </div>
 
-                <h3 class="font-white">image gallery</h3>
+                <h2 class="font-white">image gallery</h2>
             </div>
 
             <div class="project-preview span3" id="project-css-animations">
@@ -118,7 +118,7 @@
                     <img src="../images/greenville-vintage-4.jpg">
                 </div>
 
-                <h3 class="font-white">css animations</h3>
+                <h2 class="font-white">css animations</h2>
             </div>
         </div>
 
@@ -163,13 +163,21 @@
             <img class="project-detail-photo-desktop" src="<%= desktopPhoto %>">
             <img class="project-detail-photo-mobile" src="<%= mobilePhoto %>">
 
-            <div class="project-description"><%= description %></div>
+            <div class="project-description">
+                <h2>description:</h2>
 
-            <ul class="project-techs">
-                <% techs.forEach(function(tech) { %>
-                    <li><%= tech %></li>
-                <% }); %>
-            </ul>
+                <p class="font-white"><%= description %></p>
+            </div>
+
+            <h2>tech utilized:</h2>
+
+            <div class="container-fluid">
+                <div class="row project-tech">
+                    <% techs.forEach(function(tech) { %>
+                        <div class="col-md-2"><p><%= tech %></p></div>
+                    <% }); %>
+                </div>
+            </div
         </script>
 
         <!-- build:js scripts/vendor.js -->
