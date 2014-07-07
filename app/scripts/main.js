@@ -118,13 +118,6 @@ $(document).on('click', '.close-button', function() {
 });
 
 ////////////////////////////////////////////////////////////
-/////////////////////////////////////////// RESUME FUNCTIONS
-////////////////////////////////////////////////////////////
-$('#view-resume').click(function() {
-	window.open('../images/resume.pdf', '_blank', 'fullscreen=yes');
-});
-
-////////////////////////////////////////////////////////////
 //////////////////////////////////////////// NAVIGATION BARS
 ////////////////////////////////////////////////////////////
 var aryNavLinks = ['home-link', 'about-link', 'portfolio-link', 'connect-link', 'resume-link'];
@@ -142,7 +135,7 @@ $(window).scroll(function() {
 
     $.data(this, "scrollCheck",
 		setTimeout(function() {
-			if ($(window).scrollTop() > 700) {
+			if ($(window).scrollTop() > 680) {
 				$('.dynamic-header').fadeIn();
 			}
 		}, 250)
