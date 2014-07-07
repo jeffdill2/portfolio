@@ -9,6 +9,7 @@ var projectDetailTemplate = _.template($('#project-detail-template').text());
 //////////////////////////////////////////// PROJECT DETAILS
 ////////////////////////////////////////////////////////////
 var objProsAndConsDetails = {
+	name: 'pros and cons.',
 	desktopPhoto: '../images/pros-and-cons-desktop.png',
 	mobilePhoto: '../images/pros-and-cons-mobile.png',
 	projectURL: 'http://jeffdill2.github.io/pros-and-cons/',
@@ -28,6 +29,7 @@ var objProsAndConsDetails = {
 };
 
 var objChatAtchaDetails = {
+	name: 'chat atcha.',
 	desktopPhoto: '../images/chat-atcha-desktop.png',
 	mobilePhoto: '../images/mobile-placeholder.png',
 	projectURL: 'http://jeffdill2.github.io/chat-app/',
@@ -45,11 +47,12 @@ var objChatAtchaDetails = {
 };
 
 var objImageGalleryDetails = {
+	name: 'image gallery.',
 	desktopPhoto: '../images/image-gallery-desktop.png',
 	mobilePhoto: '../images/mobile-placeholder.png',
 	projectURL: 'http://jeffdill2.github.io/parse-intro/',
 	codeURL: 'https://github.com/jeffdill2/parse-intro',
-	description: 'test',
+	description: 'As an introduction to Parse, I created an image gallery. Images can uploaded from your local machine and hosted in the cloud via Parse.  <i>NOTE:</i> Filters are also available via Fabric.js, but persisting the filters to Parse is not currently available.',
 	techs: [
 		'Parse',
 		'Fabric.js',
@@ -61,11 +64,12 @@ var objImageGalleryDetails = {
 };
 
 var objCSSAnimationsDetails = {
+	name: 'css animations.',
 	desktopPhoto: '../images/css-animations-desktop.png',
 	mobilePhoto: '../images/mobile-placeholder.png',
 	projectURL: 'http://jeffdill2.github.io/iron-yard-day-four/',
 	codeURL: 'https://github.com/jeffdill2/iron-yard-day-four',
-	description: 'test',
+	description: 'One of the first projects assigned at the Iron Yard was to explore CSS by creating 30 animations using only CSS. Enjoy...',
 	techs: [
 		'HTML',
 		'CSS',
@@ -111,6 +115,13 @@ $(document).on('click', '.close-button', function() {
 	$('.project-detail').html('');
 	$('.project-detail').hide();
 	$('.project-detail-backdrop').hide();
+});
+
+////////////////////////////////////////////////////////////
+/////////////////////////////////////////// RESUME FUNCTIONS
+////////////////////////////////////////////////////////////
+$('#view-resume').click(function() {
+	window.open('../images/resume.pdf', '_blank', 'fullscreen=yes');
 });
 
 ////////////////////////////////////////////////////////////

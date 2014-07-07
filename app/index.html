@@ -128,6 +128,39 @@
             <a id="resume-link-to"></a>
 
             <h1 class="font-black">resume.</h1>
+
+            <div class="resume-button" id="view-resume">View Resume</div>
+            <div class="resume-button" id="print-resume">Print Resume</div>
+
+            <h2 class="font-black">summary:</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover">
+                    <tr>
+                        <td><p>The Iron Yard</p></td>
+                        <td><p>Student - Front End Academy</p></td>
+                        <td><p>April 2014 - Present</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p>Heeter</p></td>
+                        <td><p>Programmer</p></td>
+                        <td><p>August 2012 - March 2014</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p>Classic Graphics</p></td>
+                        <td><p>Programmer</p></td>
+                        <td><p>June 2010 - August 2012</p></td>
+                    </tr>
+
+                    <tr>
+                        <td><p>SourceLink Carolina</p></td>
+                        <td><p>Programmer</p></td>
+                        <td><p>June 2007 - June 2010</p></td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <img class="section-break-photo" src="../images/downtown-pan.png">
@@ -160,6 +193,8 @@
         ////////////////////////////////////////////////// TEMPLATES
         /////////////////////////////////////////////////////////-->
         <script type="text/template" id="project-detail-template">
+            <h1><%= name %></h1>
+
             <img class="project-detail-photo-desktop" src="<%= desktopPhoto %>">
             <img class="project-detail-photo-mobile" src="<%= mobilePhoto %>">
 
