@@ -8,6 +8,22 @@ var projectDetailTemplate = _.template($('#project-detail-template').text());
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// PROJECT DETAILS
 ////////////////////////////////////////////////////////////
+var objHeeterDetails = {
+	name: 'corporate site.',
+	desktopPhoto: 'images/heeter-desktop.png',
+	mobilePhoto: 'images/mobile-placeholder.png',
+	projectURL: 'http://www.heeter.com',
+	codeURL: 'null',
+	description: 'I helped to develop and was solely responsible for maintaining the company website when Heeter rebranded itself in 2013.',
+	techs: [
+		'DotNetNuke',
+		'JavaScript',
+		'SQL Server',
+		'HTML',
+		'CSS',
+	]
+};
+
 var objProsAndConsDetails = {
 	name: 'pros and cons.',
 	desktopPhoto: 'images/pros-and-cons-desktop.png',
@@ -99,6 +115,10 @@ $('.project-preview').click(function() {
 
 		case 'project-css-animations':
 			renderedTemplate = projectDetailTemplate(objCSSAnimationsDetails);
+			break;
+
+		case 'project-heeter':
+			renderedTemplate = projectDetailTemplate(objHeeterDetails);
 			break;
 
 		default:

@@ -6,6 +6,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -98,9 +99,17 @@
 
             <h1 class="font-black">portfolio.</h1>
 
-            <div class="project-preview span3" id="project-pros-and-cons">
+            <div class="project-preview span3" id="project-heeter">
                 <div class="thumbnail">
                     <img src="images/greenville-vintage-1.jpg">
+                </div>
+
+                <h2 class="font-white">corporate site</h2>
+            </div>
+
+            <div class="project-preview span3" id="project-pros-and-cons">
+                <div class="thumbnail">
+                    <img src="images/greenville-vintage-2.jpg">
                 </div>
 
                 <h2 class="font-white">pros and cons</h2>
@@ -108,7 +117,7 @@
 
             <div class="project-preview span3" id="project-chat-atcha">
                 <div class="thumbnail">
-                    <img src="images/greenville-vintage-2.jpg">
+                    <img src="images/greenville-vintage-3.jpg">
                 </div>
 
                 <h2 class="font-white">chat atcha</h2>
@@ -116,7 +125,7 @@
 
             <div class="project-preview span3" id="project-image-gallery">
                 <div class="thumbnail">
-                    <img src="images/greenville-vintage-3.jpg">
+                    <img src="images/greenville-vintage-4.jpg">
                 </div>
 
                 <h2 class="font-white">image gallery</h2>
@@ -124,7 +133,7 @@
 
             <div class="project-preview span3" id="project-css-animations">
                 <div class="thumbnail">
-                    <img src="images/greenville-vintage-4.jpg">
+                    <img src="images/greenville-vintage-5.jpg">
                 </div>
 
                 <h2 class="font-white">css animations</h2>
@@ -219,9 +228,11 @@
                     <div class="project-detail-button">Visit Site</div>
                 </a>
 
-                <a href="<%= codeURL %>" target="#">
-                    <div class="project-detail-button">Visit GitHub</div>
-                </a>
+                <% if (!(codeURL === "null")) { %>
+                    <a href="<%= codeURL %>" target="#">
+                        <div class="project-detail-button">Visit GitHub</div>
+                    </a>
+                <% } %>
             </div>
 
             <div class="project-description">
