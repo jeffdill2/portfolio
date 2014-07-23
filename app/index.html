@@ -232,9 +232,11 @@
             <img class="project-detail-photo-mobile" src="<%= mobilePhoto %>">
 
             <div>
-                <a href="<%= projectURL %>" target="#">
-                    <div class="project-detail-button">Visit Site</div>
-                </a>
+                <% if (!(projectURL === "null")) { %>
+                    <a href="<%= projectURL %>" target="#">
+                        <div class="project-detail-button">Visit Site</div>
+                    </a>
+                <% } %>
 
                 <% if (!(codeURL === "null")) { %>
                     <a href="<%= codeURL %>" target="#">
