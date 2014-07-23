@@ -289,6 +289,7 @@ section {
 
 .close-button {
     background: url('/portfolio/images/close-button.png');
+    cursor: pointer;
     height: 40px;
     position: absolute;
     right: 10px;
@@ -296,7 +297,6 @@ section {
     width: 40px;
 
     &:hover {
-        cursor: pointer;
         opacity: 0.7;
     }
 }
@@ -469,7 +469,7 @@ section {
     }
 
     .project-detail {
-        background-color: $colorMidnightGray;
+        background-color: $colorDeepFogGray;
         border-radius: 6px;
         display: none;
         height: 100%;
