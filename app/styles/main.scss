@@ -23,6 +23,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 /////////////////////////////////////////////////////// TAGS
 ////////////////////////////////////////////////////////////
 body {
+    padding: 0px;
     padding-top: 20px;
 
     &.resume {
@@ -92,6 +93,15 @@ ul {
     padding: 0px;
 }
 
+section {
+    background-image: $backgroundPaperTexture;
+    left: 0px;
+    min-height: 200px;
+    padding: 30px 80px 50px 80px;
+    right: 0px;
+    text-align: center;
+}
+
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// COLOR OVERRIDES
 ////////////////////////////////////////////////////////////
@@ -151,15 +161,6 @@ ul {
     top: 0;
     width: 100%;
     z-index: -1;
-}
-
-.section {
-    background-image: $backgroundPaperTexture;
-    left: 0px;
-    min-height: 200px;
-    padding: 30px 80px 50px 80px;
-    right: 0px;
-    text-align: center;
 }
 
 .first-section {
@@ -458,7 +459,11 @@ ul {
 ///////////////////////////////////////////////// RESPONSIVE
 ////////////////////////////////////////////////////////////
 @media screen and (max-width: 1000px) {
-    .section {
+    h1 {
+        font-size: 60px;
+    }
+
+    section {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -491,6 +496,10 @@ ul {
         padding: 10px;
     }
 
+    .social-media-link {
+        padding: 10px;
+    }
+
     .header {
         display: none;
     }
@@ -503,25 +512,6 @@ ul {
         & h5 {
             font-size: 12px;
         }
-    }
-}
-
-@media print {
-    .no-print, .no-print * {
-        display: none !important;
-    }
-
-    .print {
-        display: block !important;
-    }
-
-    .resume-container h1 {
-        font-size: 25px;
-        margin-bottom: -58px;
-    }
-
-    .resume-container h2 {
-        padding-top: 30px;
     }
 }
 
@@ -559,18 +549,83 @@ ul {
             font-size: 18px;
         }
     }
+
+    .headline {
+        padding-top: 60px;
+
+        & h2 {
+            font-size: 30px;
+        }
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     body {
-        padding: 0;
-        margin: 0;
+        padding: 0px;
+        margin: 0px;
         width: 320px;
+    }
+
+    section {
+        padding: 0px;
+        padding-bottom: 40px;
+        padding-top: 10px;
+    }
+
+    .first-section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .headline {
+        padding-top: 50px;
+
+        & h2 {
+            font-size: 22px;
+        }
+    }
+
+    .project-preview {
+        height: 265px;
+        margin: 10px;
+        padding: 15px;
+        width: 300px;
+    }
+
+    .email-phone-infos {
+        & p {
+            font-size: 16px;
+        }
+    }
+
+    .footer {
+        & h5 {
+            font-size: 10px;
+        }
     }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     body {
         width: 495px;
+    }
+}
+
+@media print {
+    .no-print, .no-print * {
+        display: none !important;
+    }
+
+    .print {
+        display: block !important;
+    }
+
+    .resume-container h1 {
+        font-size: 25px;
+        margin-bottom: -58px;
+    }
+
+    .resume-container h2 {
+        padding-top: 30px;
     }
 }
