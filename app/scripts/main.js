@@ -8,6 +8,26 @@ var projectDetailTemplate = _.template($('#project-detail-template').text());
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// PROJECT DETAILS
 ////////////////////////////////////////////////////////////
+var objHungerCrunchDetails = {
+	name: 'hunger crunch.',
+	desktopPhoto: 'images/hunger-crunch-desktop.png',
+	mobilePhoto: 'images/mobile-placeholder.png',
+	projectURL: 'null',
+	codeURL: 'https://github.com/jeffdill2/hunger-crunch-tournament',
+	description: 'A Greenville non-profit called Hunger Crunch asked me and two other developers to create a backend and leaderboard site for them that would enable tournament play for their iOS game. We accomplished this in less than 3 weeks, and the client was thrilled with the results!',
+	techs: [
+		'Parse',
+		'jQuery',
+		'Moment.js',
+		'List.js',
+		'Pickadate.js',
+		'Underscore.js',
+		'HTML5',
+		'CSS3',
+		'Sass'
+	]
+};
+
 var objHeeterDetails = {
 	name: 'corporate site.',
 	desktopPhoto: 'images/heeter-desktop.png',
@@ -19,8 +39,8 @@ var objHeeterDetails = {
 		'DotNetNuke',
 		'JavaScript',
 		'SQL Server',
-		'HTML',
-		'CSS',
+		'HTML5',
+		'CSS3',
 	]
 };
 
@@ -32,13 +52,14 @@ var objProsAndConsDetails = {
 	codeURL: 'https://github.com/jeffdill2/pros-and-cons',
 	description: 'Pros and Cons is an app I created to demonstrate moving data around between different Backbone collections. The data resides on an Express server utilizing MongoDB.',
 	techs: [
-		'Backbone',
+		'Backbone.js',
 		'Express',
+		'jQuery',
 		'Node.js',
 		'MongoDB',
-		'Underscore',
-		'HTML',
-		'CSS',
+		'Underscore.js',
+		'HTML5',
+		'CSS3',
 		'Sass',
 		'Responsive Design'
 	]
@@ -53,11 +74,13 @@ var objChatAtchaDetails = {
 	description: 'Chat Atcha is a messaging application I built. It stores and retrieves data in real-time from an Express server utilizing MongoDB.  <i>HINT</i>: If you hover over the triangle, you can toggle Auto-Scroll on and off.',
 	techs: [
 		'Express',
+		'jQuery',
 		'Node.js',
+		'Moment.js',
 		'MongoDB',
-		'Underscore',
-		'HTML',
-		'CSS',
+		'Underscore.js',
+		'HTML5',
+		'CSS3',
 		'Sass'
 	]
 };
@@ -71,10 +94,11 @@ var objImageGalleryDetails = {
 	description: 'As an introduction to Parse, I created an image gallery. Images can uploaded from your local machine and hosted in the cloud via Parse.  <i>NOTE:</i> Filters are also available via Fabric.js, but persisting the filters to Parse is not currently available.',
 	techs: [
 		'Parse',
+		'jQuery',
 		'Fabric.js',
-		'Underscore',
-		'HTML',
-		'CSS',
+		'Underscore.js',
+		'HTML5',
+		'CSS3',
 		'Sass'
 	]
 };
@@ -88,7 +112,7 @@ var objCSSAnimationsDetails = {
 	description: 'One of the first projects assigned at the Iron Yard was to explore CSS by creating 30 animations using only CSS. Enjoy...',
 	techs: [
 		'HTML',
-		'CSS',
+		'CSS3',
 		'Sass',
 		'Keyframes'
 	]
@@ -101,6 +125,10 @@ $('.project-preview').click(function() {
 	var renderedTemplate;
 
 	switch (this.id) {
+		case 'project-hunger-crunch':
+			renderedTemplate = projectDetailTemplate(objHungerCrunchDetails);
+			break;
+
 		case 'project-pros-and-cons':
 			renderedTemplate = projectDetailTemplate(objProsAndConsDetails);
 			break;
