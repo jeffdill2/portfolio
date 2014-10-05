@@ -1,5 +1,7 @@
 'use strict';
 
+Parse.initialize("Q1ZExtp5mump0KEQt58uJSb8HHtD47qO0I0VeGmt", "49jnR1OKE8VPvnM2GpkHv7tbao9NEiUj1XJXYaqX");
+
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////// TEMPLATES
 ////////////////////////////////////////////////////////////
@@ -8,11 +10,33 @@ var projectDetailTemplate = _.template($('#project-detail-template').text());
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// PROJECT DETAILS
 ////////////////////////////////////////////////////////////
+var objShowroomDetails = {
+	name: 'showroom.',
+	desktopPhoto: 'images/showroom-desktop.png',
+	mobilePhoto: 'images/showroom-mobile.png',
+	projectURL: 'http://showroom.audiogon.com',
+	codeURL: 'null',
+	description: 'My first project as an employee of Audiogon was to create a photo browsing experience for users to be able to discover beautiful pictures of listings on Audiogon\'s eCommerce site. Data is pulled in the background via Audiogon\'s API and displayed quickly and efficiently at runtime by utilizing lazy loading. I was given 3 weeks to complete this task so that it could be announced with the shipping of a release that had already been announced for the eCommerce site. It will be a constant work-in-progress to add many great new features!',
+	techs: [
+		'Ruby',
+		'Rails',
+		'PostgreSQL',
+		'Slim',
+		'Underscore.js',
+		'Heroku',
+		'jQuery',
+		'Bootstrap',
+		'HTML5',
+		'CSS3',
+		'Sass'
+	]
+};
+
 var objHungerCrunchDetails = {
 	name: 'hunger crunch.',
 	desktopPhoto: 'images/hunger-crunch-desktop.png',
 	mobilePhoto: 'images/mobile-placeholder.png',
-	projectURL: 'null',
+	projectURL: 'http://www.hungercrunch.com/tournaments',
 	codeURL: 'https://github.com/jeffdill2/hunger-crunch-tournament',
 	description: 'A Greenville non-profit called Hunger Crunch asked me and two other developers to create a backend and leaderboard site for them that would enable tournament play for their iOS game. We accomplished this in less than 3 weeks, and the client was thrilled with the results!',
 	techs: [
@@ -125,6 +149,10 @@ $('.project-preview').click(function() {
 	var renderedTemplate;
 
 	switch (this.id) {
+		case 'project-showroom':
+			renderedTemplate = projectDetailTemplate(objShowroomDetails);
+			break;
+
 		case 'project-hunger-crunch':
 			renderedTemplate = projectDetailTemplate(objHungerCrunchDetails);
 			break;
