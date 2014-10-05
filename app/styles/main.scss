@@ -165,12 +165,14 @@ section {
 
 .first-section {
     margin-top: 200px;
+    box-shadow: 0px 0px 12px 2px $colorFogGray;
 }
 
 .section-break-photo {
     height: 300px;
     padding: 0px;
     width: 100%;
+    box-shadow: 0px 0px 12px 2px $colorFogGray;
 }
 
 .headline {
