@@ -185,12 +185,14 @@ $('.project-preview').click(function() {
 	$('.project-detail').append(renderedTemplate);
 	$('.project-detail-backdrop').fadeIn();
 	$('.project-detail').fadeIn();
+	$('body').addClass('modal-open');
 });
 
 $(document).on('click', '.close-button', function() {
 	$('.project-detail').html('');
 	$('.project-detail').hide();
 	$('.project-detail-backdrop').hide();
+	$('body').removeClass('modal-open');
 });
 
 ////////////////////////////////////////////////////////////
