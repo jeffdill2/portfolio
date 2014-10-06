@@ -263,20 +263,24 @@
             </div>
 
             <div class="project-description">
+                <hr/>
                 <h2>description:</h2>
 
                 <p class="font-white"><%= description %></p>
             </div>
 
-            <h2>tech utilized:</h2>
+            <div class="project-description">
+                <hr/>
+                <h2>tech utilized:</h2>
 
-            <div class="container-fluid">
-                <div class="row project-tech">
-                    <% techs.forEach(function(tech) { %>
-                        <div class="col-md-2"><p><%= tech %></p></div>
-                    <% }); %>
+                <div class="container-fluid">
+                    <div class="row project-tech">
+                        <% techs.forEach(function(tech) { %>
+                            <div class="col-md-2"><p><%= tech %></p></div>
+                        <% }); %>
+                    </div>
                 </div>
-            </div
+            </div>
         </script>
 
         <!-- build:js scripts/vendor.js -->
