@@ -13,626 +13,626 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // endbower
 
 .browsehappy {
-    background: $colorStoneGray;
-    color: $colorBlack;
-    margin: 0.2em 0;
-    padding: 0.2em 0;
+  background: $colorStoneGray;
+  color: $colorBlack;
+  margin: 0.2em 0;
+  padding: 0.2em 0;
 }
 
 ////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////// TAGS
 ////////////////////////////////////////////////////////////
 body {
-    padding: 0px;
-    padding-top: 20px;
+  padding: 0px;
+  padding-top: 20px;
 
-    &.resume {
-        background-color: $colorLightGray;
-        padding-bottom: 20px;
-    }
+  &.resume {
+    background-color: $colorLightGray;
+    padding-bottom: 20px;
+  }
 
-    &.modal-open {
-        overflow: hidden;
-    }
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 h1 {
-    color: $colorWhite;
-    font-family: $fontIMFellDWPica;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 80px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 20px;
+  color: $colorWhite;
+  font-family: $fontIMFellDWPica;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 80px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 20px;
 }
 
 h2 {
-    color: $colorWhite;
-    font-family: $fontIMFellDWPica;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 30px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 19px;
+  color: $colorWhite;
+  font-family: $fontIMFellDWPica;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 19px;
 }
 
 h3 {
-    color: $colorBlack;
-    font-family: $fontIMFellDWPica;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 40px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 19px;
+  color: $colorBlack;
+  font-family: $fontIMFellDWPica;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 19px;
 }
 
 h5 {
-    color: $colorBlack;
-    font-family: $fontIMFellDWPica;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 40px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 19px;
+  color: $colorBlack;
+  font-family: $fontIMFellDWPica;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 19px;
 }
 
 p {
-    color: $colorBlack;
-    font-family: $fontPodkova;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 30px;
-    margin-bottom: 0;
-    margin-top: 0;
+  color: $colorBlack;
+  font-family: $fontPodkova;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 section {
-    background-image: $backgroundPaperTexture;
-    left: 0px;
-    min-height: 200px;
-    padding: 30px 80px 50px 80px;
-    right: 0px;
-    text-align: center;
+  background-image: $backgroundPaperTexture;
+  left: 0px;
+  min-height: 200px;
+  padding: 30px 80px 50px 80px;
+  right: 0px;
+  text-align: center;
 }
 
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// COLOR OVERRIDES
 ////////////////////////////////////////////////////////////
 .font-white {
-    color: $colorWhite !important;
+  color: $colorWhite !important;
 }
 
 .font-black {
-    color: $colorBlack !important;
+  color: $colorBlack !important;
 }
 
 ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////// HEADER
 ////////////////////////////////////////////////////////////
 .header {
-    position: static;
+  position: static;
 }
 
 .dynamic-header {
-    background-color: $colorBlack;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    display: none;
-    height: 46px;
-    left: 10px;
-    opacity: 0.9;
-    position: fixed;
-    padding-left: 4px;
-    padding-top: 2px;
-    top: 0px;
-    width: 500px;
+  background-color: $colorBlack;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: none;
+  height: 46px;
+  left: 10px;
+  opacity: 0.9;
+  position: fixed;
+  padding-left: 4px;
+  padding-top: 2px;
+  top: 0px;
+  width: 500px;
 }
 
 .nav a {
-    color: $colorBlack;
-    font-family: $fontIMFellDWPica;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 22px;
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-bottom: 19px;
+  color: $colorBlack;
+  font-family: $fontIMFellDWPica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 19px;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 ////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////// BODY
 ////////////////////////////////////////////////////////////
 .home-banner {
-    height: 800px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+  height: 800px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .first-section {
-    margin-top: 200px;
-    box-shadow: 0px 0px 12px 2px $colorFogGray;
+  margin-top: 200px;
+  box-shadow: 0px 0px 12px 2px $colorFogGray;
 }
 
 .section-break-photo {
-    height: 300px;
-    padding: 0px;
-    width: 100%;
-    box-shadow: 0px 0px 12px 2px $colorFogGray;
+  height: 300px;
+  padding: 0px;
+  width: 100%;
+  box-shadow: 0px 0px 12px 2px $colorFogGray;
 }
 
 .headline {
-    background-color: $colorDeepFogGray;
-    border-radius: 8px;
-    margin: 0 auto;
-    margin-top: 100px;
-    max-width: 800px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
+  background-color: $colorDeepFogGray;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 800px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////// PORTFOLIO
 ////////////////////////////////////////////////////////////
 .project-preview {
-    background-color: $colorFogGray;
-    display: inline-block;
-    height: 300px;
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
+  background-color: $colorFogGray;
+  display: inline-block;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
 
-    &:hover {
-        cursor: pointer;
-        opacity: 0.6;
-    }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 }
 
 .project-detail {
-    background-color: $colorDeepFogGray;
-    border-radius: 6px;
-    display: none;
-    height: 80%;
-    left: 10%;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 20px;
-    padding-top: 30px;
-    position: fixed;
-    text-align: center;
-    top: 10%;
-    width: 80%;
-    z-index: 1001;
+  background-color: $colorDeepFogGray;
+  border-radius: 6px;
+  display: none;
+  height: 80%;
+  left: 10%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 20px;
+  padding-top: 30px;
+  position: fixed;
+  text-align: center;
+  top: 10%;
+  width: 80%;
+  z-index: 1001;
 }
 
 .project-detail-photo-desktop {
-    padding: 20px;
-    width: 50%;
+  padding: 20px;
+  width: 50%;
 }
 
 .project-detail-photo-mobile {
-    height: 70%;
-    padding: 20px;
+  height: 70%;
+  padding: 20px;
 }
 
 .project-detail-backdrop {
-    background-color: $colorWhite;
-    bottom: 0px;
-    display: none;
-    left: 0px;
-    opacity: 0.8;
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    z-index: 1001;
+  background-color: $colorWhite;
+  bottom: 0px;
+  display: none;
+  left: 0px;
+  opacity: 0.8;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 1001;
 }
 
 .project-detail-button {
-    background-color: $colorStoneGray;
-    border: 1px solid $colorMidnightGray;
-    border-radius: 4px;
-    color: $colorBlack;
-    display: inline-block;
-    font-family: $fontPodkova;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    height: 80px;
-    line-height: 80px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
-    text-align: center;
-    width: 300px;
-    text-shadow: -1px -1px 1px $colorLightGray;
+  background-color: $colorStoneGray;
+  border: 1px solid $colorMidnightGray;
+  border-radius: 4px;
+  color: $colorBlack;
+  display: inline-block;
+  font-family: $fontPodkova;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  text-align: center;
+  width: 300px;
+  text-shadow: -1px -1px 1px $colorLightGray;
 
-    &:hover {
-        background-color: $colorBlack;
-        color: $colorWhite;
-        text-shadow: 0px 0px 0px $colorWhite;
-        box-shadow: 0px 0px 10px 0px $colorStoneGray;
-    }
+  &:hover {
+    background-color: $colorBlack;
+    color: $colorWhite;
+    text-shadow: 0px 0px 0px $colorWhite;
+    box-shadow: 0px 0px 10px 0px $colorStoneGray;
+  }
 }
 
 .project-description {
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: -20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: -20px;
 }
 
 .project-tech {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
 
-    & [class*="col"] {
-        background-image: $backgroundPaperTexture;
-        border-radius: 3px;
-        margin: 5px;
-        padding: 5px;
-        text-align: center;
-    }
+  & [class*="col"] {
+    background-image: $backgroundPaperTexture;
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
 }
 
 .close-button {
-    background: url('/images/close-button.png');
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 40px;
+  background: url('/images/close-button.png');
+  cursor: pointer;
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
 
-    &:hover {
-        opacity: 0.7;
-    }
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////// RESUME
 ////////////////////////////////////////////////////////////
 .resume-button {
-    background-color: $colorStoneGray;
-    border-radius: 4px;
-    color: $colorBlack;
-    display: inline-block;
-    font-family: $fontPodkova;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    height: 80px;
-    line-height: 80px;
-    margin-bottom: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    text-align: center;
-    width: 300px;
-    text-shadow: -1px -1px 1px $colorLightGray;
+  background-color: $colorStoneGray;
+  border-radius: 4px;
+  color: $colorBlack;
+  display: inline-block;
+  font-family: $fontPodkova;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  height: 80px;
+  line-height: 80px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  text-align: center;
+  width: 300px;
+  text-shadow: -1px -1px 1px $colorLightGray;
 
-    &:hover {
-        background-color: $colorBlack;
-        color: $colorWhite;
-        text-shadow: 0px 0px 0px $colorWhite;
-        box-shadow: 0px 0px 10px 0px $colorStoneGray;
-    }
+  &:hover {
+    background-color: $colorBlack;
+    color: $colorWhite;
+    text-shadow: 0px 0px 0px $colorWhite;
+    box-shadow: 0px 0px 10px 0px $colorStoneGray;
+  }
 }
 
 .resume-container {
-    background: $colorWhite;
-    border-radius: 10px;
-    color: $colorMidnightGray;
+  background: $colorWhite;
+  border-radius: 10px;
+  color: $colorMidnightGray;
+  font-family: $fontDroidSans;
+  margin: 0 auto;
+  padding: 25px;
+  width: 800px;
+
+  & .resume-header {
+    background-color: $colorMidnightGray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: -25px;
+    text-align: center;
+  }
+
+  & h1 {
+    border-radius: 10px 10px 0 0;
+    color: $colorWhite;
+    font-family: $fontOswald;
+    font-size: 60px;
+    padding-top: 10px;
+  }
+
+  & h2 {
+    color: $colorWhite;
+    font-family: $fontOswald;
+    font-weight: normal;
+  }
+
+  & h3 {
+    color: $colorWhite;
+    font-family: $fontOswald;
+    margin-bottom: -14px;
+    margin-top: 20px;
+  }
+
+  & h4 {
+    margin-top: 0px;
+  }
+
+  & p {
     font-family: $fontDroidSans;
-    margin: 0 auto;
-    padding: 25px;
-    width: 800px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+  }
 
-    & .resume-header {
-        background-color: $colorMidnightGray;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        margin: -25px;
-        text-align: center;
-    }
+  & ul {
+    list-style-type: circle;
+    padding-left: 25px;
+  }
 
-    & h1 {
-        border-radius: 10px 10px 0 0;
-        color: $colorWhite;
-        font-family: $fontOswald;
-        font-size: 60px;
-        padding-top: 10px;
-    }
+  & .resume-print {
+    cursor: pointer;
+    height: 50px;
+    padding-top: 30px;
+    width: 200px;
+  }
 
-    & h2 {
-        color: $colorWhite;
-        font-family: $fontOswald;
-        font-weight: normal;
-    }
-
-    & h3 {
-        color: $colorWhite;
-        font-family: $fontOswald;
-        margin-bottom: -14px;
-        margin-top: 20px;
-    }
-
-    & h4 {
-        margin-top: 0px;
-    }
-
-    & p {
-        font-family: $fontDroidSans;
-        font-size: 18px;
-        font-weight: normal;
-        line-height: 25px;
-        margin-top: -20px;
-        padding-bottom: 10px;
-    }
-
-    & ul {
-        list-style-type: circle;
-        padding-left: 25px;
-    }
-
-    & .resume-print {
-        cursor: pointer;
-        height: 50px;
-        padding-top: 30px;
-        width: 200px;
-    }
-
-    & .print {
-        display: none;
-    }
+  & .print {
+    display: none;
+  }
 }
 
 .section-header {
-    margin-bottom: -20px;
-    padding-top: 50px;
+  margin-bottom: -20px;
+  padding-top: 50px;
 }
 
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////// CONNECT
 ////////////////////////////////////////////////////////////
 .social-media-links {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .social-media-link {
-    color: $colorMidnightGray;
-    padding-left: 20px;
-    padding-right: 20px;
+  color: $colorMidnightGray;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    &:hover {
-        -webkit-animation: float 1.5s ease-out infinite;
-        -moz-animation: float 1.5s ease-out infinite;
-        -ms-animation: float 1.5s ease-out infinite;
-        -o-animation: float 1.5s ease-out infinite;
-        animation: float 1.5s ease-out infinite;
-    }
+  &:hover {
+    -webkit-animation: float 1.5s ease-out infinite;
+    -moz-animation: float 1.5s ease-out infinite;
+    -ms-animation: float 1.5s ease-out infinite;
+    -o-animation: float 1.5s ease-out infinite;
+    animation: float 1.5s ease-out infinite;
+  }
 }
 
 @-webkit-keyframes float {
-    50% {
-        -webkit-transform: translate(0px, 8px);
-        -moz-transform: translate(0px, 8px);
-        -ms-transform: translate(0px, 8px);
-        -o-transform: translate(0px, 8px);
-        transform: translate(0px, 8px);
-    }
+  50% {
+    -webkit-transform: translate(0px, 8px);
+    -moz-transform: translate(0px, 8px);
+    -ms-transform: translate(0px, 8px);
+    -o-transform: translate(0px, 8px);
+    transform: translate(0px, 8px);
+  }
 }
 
 .email-phone-infos {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .email-phone-info {
-    color: inherit;
+  color: inherit;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////// FOOTER
 ////////////////////////////////////////////////////////////
 .footer {
-    border-top: 1px solid $colorStoneGray;
-    color: $colorWhite;
-    margin-top: 40px;
-    padding-top: 19px;
+  border-top: 1px solid $colorStoneGray;
+  color: $colorWhite;
+  margin-top: 40px;
+  padding-top: 19px;
 }
 
 ////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////// RESPONSIVE
 ////////////////////////////////////////////////////////////
 @media screen and (max-width: 1000px) {
-    h1 {
-        font-size: 60px;
-    }
+  h1 {
+    font-size: 60px;
+  }
 
-    section {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .project-detail {
-        background-color: $colorDeepFogGray;
-        border-radius: 6px;
-        display: none;
-        height: 100%;
-        left: 0px;
-        margin: 0 auto;
-        overflow: auto;
-        padding: 0px;
-        padding-top: 20px;
-        position: fixed;
-        text-align: center;
-        top: 0px;
-        width: 100%;
-        z-index: 1001;
-    }
+  .project-detail {
+    background-color: $colorDeepFogGray;
+    border-radius: 6px;
+    display: none;
+    height: 100%;
+    left: 0px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px;
+    padding-top: 20px;
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+    z-index: 1001;
+  }
 
-    .project-detail-photo-desktop {
-        padding: 10px;
-        padding-top: 40px;
-        width: 100%;
-    }
+  .project-detail-photo-desktop {
+    padding: 10px;
+    padding-top: 40px;
+    width: 100%;
+  }
 
-    .project-detail-photo-mobile {
-        height: 40%;
-        padding: 10px;
-    }
+  .project-detail-photo-mobile {
+    height: 40%;
+    padding: 10px;
+  }
 
-    .social-media-link {
-        padding: 10px;
-    }
+  .social-media-link {
+    padding: 10px;
+  }
 
-    .header {
-        display: none;
-    }
+  .header {
+    display: none;
+  }
 
-    .dynamic-header {
-        display: none !important;
-    }
+  .dynamic-header {
+    display: none !important;
+  }
 
-    .footer {
-        & h5 {
-            font-size: 12px;
-        }
+  .footer {
+    h5 {
+      font-size: 12px;
     }
+  }
 }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
-    table, thead, tbody, th, td, tr {
-        display: block;
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+
+    &:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
     }
 
-    thead tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
+    p {
+      font-size: 18px;
     }
+  }
 
-    tr {
-        border: 1px solid #ccc;
+  .headline {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 30px;
     }
-
-    td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-
-        &:before {
-            position: absolute;
-            top: 6px;
-            left: 6px;
-            width: 45%;
-            padding-right: 10px;
-            white-space: nowrap;
-        }
-
-        & p {
-            font-size: 18px;
-        }
-    }
-
-    .headline {
-        padding-top: 40px;
-        padding-bottom: 40px;
-
-        & h2 {
-            font-size: 30px;
-        }
-    }
+  }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    body {
-        padding: 0px;
-        margin: 0px;
-    }
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
 
-    section {
-        padding: 0px;
-        padding-bottom: 40px;
-        padding-top: 10px;
-    }
+  section {
+    padding: 0px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
 
-    .first-section {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
+  .first-section {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
-    .headline {
-        padding-top: 20px;
-        padding-bottom: 20px;
+  .headline {
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-        & h2 {
-            font-size: 22px;
-        }
+    h2 {
+      font-size: 22px;
     }
+  }
 
-    .project-preview {
-        height: 265px;
-        margin: 10px;
-        padding: 15px;
-        width: 300px;
-    }
+  .project-preview {
+    height: 265px;
+    margin: 10px;
+    padding: 15px;
+    width: 300px;
+  }
 
-    .email-phone-infos {
-        & p {
-            font-size: 16px;
-        }
+  .email-phone-infos {
+    p {
+      font-size: 16px;
     }
+  }
 
-    .footer {
-        & h5 {
-            font-size: 10px;
-        }
+  .footer {
+    h5 {
+      font-size: 10px;
     }
+  }
 }
 
 @media print {
-    .no-print, .no-print * {
-        display: none !important;
-    }
+  .no-print, .no-print * {
+    display: none !important;
+  }
 
-    .print {
-        display: block !important;
-    }
+  .print {
+    display: block !important;
+  }
 
-    .resume-container h1 {
-        font-size: 25px;
-        margin-bottom: -58px;
-    }
+  .resume-container h1 {
+    font-size: 25px;
+    margin-bottom: -58px;
+  }
 
-    .resume-container h2 {
-        padding-top: 30px;
-    }
+  .resume-container h2 {
+    padding-top: 30px;
+  }
 }
