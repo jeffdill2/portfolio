@@ -270,9 +270,13 @@
       <h2>tech utilized:</h2>
 
       <div class="container-fluid">
-        <div class="row project-tech">
+        <div class="row project-tech-row">
           <% techs.forEach(function(tech) { %>
-            <div class="col-md-2"><p><%= tech %></p></div>
+            <div class="col-md-3 col-sm-4 col-xs-12">
+              <div class="project-tech">
+                <p><%= tech %></p>
+              </div>
+            </div>
           <% }); %>
         </div>
       </div>

@@ -276,26 +276,20 @@ section {
   }
 }
 
-.project-description {
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: -20px;
-}
-
-.project-tech {
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-
-  & [class*="col"] {
+.project-tech-row {
+  .project-tech {
     background-image: $backgroundPaperTexture;
     border-radius: 3px;
-    margin: 5px;
+    margin-top: 10px;
     padding: 5px;
-    text-align: center;
+  }
+
+  [class*="col"] {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
+
 
 .close-button {
   background: url('/images/close-button.png');
