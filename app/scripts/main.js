@@ -113,7 +113,7 @@ var objCSSAnimationsDetails = {
 	mobilePhoto: 'images/mobile-placeholder.png',
 	projectURL: 'http://jeffdill2.github.io/iron-yard-day-four/',
 	codeURL: 'https://github.com/jeffdill2/iron-yard-day-four',
-	description: 'One of the first projects assigned at the Iron Yard was to explore CSS by creating 30 animations using only CSS. Enjoy...',
+	description: 'Just having fun exploring and creating a bunch of different CSS animations. Enjoy...',
 	techs: [
 		'HTML',
 		'CSS3',
@@ -197,7 +197,33 @@ $(window).scroll(function() {
 });
 
 ////////////////////////////////////////////////////////////
-//////////////////////////////////////////// NAVIGATION BARS
+////////////////////////////////////////////////// PORTFOLIO
+////////////////////////////////////////////////////////////
+$(document).ready(function() {
+	var $theRealDeal = $('#portfolio-selector .the-real-deal');
+	var $justForFun = $('#portfolio-selector .just-for-fun');
+	var $theRealDealContent = $('#the-real-deal-content');
+	var $justForFunContent = $('#just-for-fun-content');
+
+	$theRealDeal.on('click', function() {
+		$theRealDeal.addClass('active');
+		$justForFun.removeClass('active');
+
+		$justForFunContent.slideUp(400);
+		$theRealDealContent.slideDown(400);
+	});
+
+	$justForFun.on('click', function() {
+		$justForFun.addClass('active');
+		$theRealDeal.removeClass('active');
+
+		$theRealDealContent.slideUp(400);
+		$justForFunContent.slideDown(400);
+	});
+});
+
+////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////// FOOTER
 ////////////////////////////////////////////////////////////
 $(document).ready(function() {
 	$('#copyright-year').text(new Date().getFullYear());

@@ -195,6 +195,16 @@ section {
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////// PORTFOLIO
 ////////////////////////////////////////////////////////////
+#portfolio-selector {
+  font-family: $fontPodkova;
+  margin-top: 20px;
+
+  .btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .project-preview {
   background-color: $colorFogGray;
   display: inline-block;
