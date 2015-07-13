@@ -8,13 +8,13 @@ var projectDetailTemplate = _.template($('#project-detail-template').text());
 ////////////////////////////////////////////////////////////
 //////////////////////////////////////////// PROJECT DETAILS
 ////////////////////////////////////////////////////////////
-var objShowroomDetails = {
-	name: 'showroom.',
-	desktopPhoto: 'images/showroom-desktop.png',
-	mobilePhoto: 'images/showroom-mobile.png',
-	projectURL: 'http://showroom.audiogon.com',
+var objAudiogonDetails = {
+	name: 'audiogon.',
+	desktopPhoto: 'images/audiogon-desktop.png',
+	mobilePhoto: 'images/audiogon-mobile.png',
+	projectURL: 'http://app.audiogon.com',
 	codeURL: 'null',
-	description: 'My first project as an employee of Audiogon was to create a photo browsing experience for users to be able to discover beautiful pictures of listings on Audiogon\'s eCommerce site. Data is pulled in the background via Audiogon\'s API and displayed quickly and efficiently at runtime by utilizing lazy loading. I was given 3 weeks to complete this task so that it could be announced with the shipping of a release that had already been announced for the eCommerce site. It will be a constant work-in-progress to add many great new features!',
+	description: 'As a web-based company, this project is the entirety of our existence. It\'s a constant work in progress and an intense joy to improve our application on a daily basis. There are many projects that I\'ve been solely in charge of but most I have the privilege of working on with two other devs. Some of the cooler things we\'ve done are security features, mobile responsiveness, overhauled homepage, internal admin tools, etc.',
 	techs: [
 		'Ruby',
 		'Rails',
@@ -147,8 +147,8 @@ $('.project-preview').click(function() {
 	var renderedTemplate;
 
 	switch (this.id) {
-		case 'project-showroom':
-			renderedTemplate = projectDetailTemplate(objShowroomDetails);
+		case 'project-audiogon':
+			renderedTemplate = projectDetailTemplate(objAudiogonDetails);
 			break;
 
 		case 'project-hunger-crunch':
