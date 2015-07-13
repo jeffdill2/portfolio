@@ -107,24 +107,6 @@ var objChatAtchaDetails = {
 	]
 };
 
-var objImageGalleryDetails = {
-	name: 'image gallery.',
-	desktopPhoto: 'images/image-gallery-desktop.png',
-	mobilePhoto: 'images/mobile-placeholder.png',
-	projectURL: 'http://jeffdill2.github.io/parse-intro/',
-	codeURL: 'https://github.com/jeffdill2/parse-intro',
-	description: 'As an introduction to Parse, I created an image gallery. Images can uploaded from your local machine and hosted in the cloud via Parse.  <i>NOTE:</i> Filters are also available via Fabric.js, but persisting the filters to Parse is not currently available.',
-	techs: [
-		'Parse',
-		'jQuery',
-		'Fabric.js',
-		'Underscore.js',
-		'HTML5',
-		'CSS3',
-		'Sass'
-	]
-};
-
 var objCSSAnimationsDetails = {
 	name: 'css animations.',
 	desktopPhoto: 'images/css-animations-desktop.png',
@@ -161,10 +143,6 @@ $('.project-preview').click(function() {
 
 		case 'project-chat-atcha':
 			renderedTemplate = projectDetailTemplate(objChatAtchaDetails);
-			break;
-
-		case 'project-image-gallery':
-			renderedTemplate = projectDetailTemplate(objImageGalleryDetails);
 			break;
 
 		case 'project-css-animations':
